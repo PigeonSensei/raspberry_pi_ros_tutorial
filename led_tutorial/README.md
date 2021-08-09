@@ -8,7 +8,7 @@ Provides a simple LED control example
 
 ### Diagram
 
-![basic_led_diagram](./led_tutorial/diagram/basic_led.png)
+![basic_led_diagram](./diagram/basic_led.png)
 
 ### Run
 
@@ -31,7 +31,7 @@ Provides an example of LED control using a switch
 
 ### Diagram
 
-![switch_on_led_diagram](./led_tutorial/diagram/switch_on_led.png)
+![switch_on_led_diagram](./diagram/switch_on_led.png)
 
 ### Run
 
