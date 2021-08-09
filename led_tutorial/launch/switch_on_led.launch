@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- rusrun led_tutorial switch_on_led_node -->
+  <node pkg="led_tutorial" type="switch_on_led_node" name="switch_on_led_node" respawn="false" output="screen">
+    <param name="LEDPin" type="int" value="12" />
+    <param name="SwitchPin" type="int" value="16" />
+  </node>
+
+</launch>
+
