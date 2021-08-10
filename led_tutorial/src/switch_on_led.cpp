@@ -12,6 +12,9 @@ int main(int argc, char **argv)
   n.param<int>("LEDPin", led_pin, 0);
   n.param<int>("SwitchPin", switch_pin, 0);
 
+  ROS_INFO("LED Pin : %d", led_pin);
+  ROS_INFO("Switch Pin : %d", switch_pin);
+
   ros::Rate loop_rate(30);
 
   wiringPiSetupGpio();
@@ -24,14 +27,14 @@ int main(int argc, char **argv)
     if(digitalRead(switch_pin) == HIGH)
     {
       digitalWrite(led_pin,HIGH);
-      ROS_INFO("SWITCH_ON");
-      ROS_INFO("LED_ON");
+      ROS_INFO("SWITCH ON");
+      ROS_INFO("LED ON");
     }
     else
     {
       digitalWrite(led_pin,LOW);
-      ROS_INFO("SWITCH_OFF");
-      ROS_INFO("LED_OFF");
+      ROS_INFO("SWITCHOFF");
+      ROS_INFO("LED OFF");
     }
 
     loop_rate.sleep();

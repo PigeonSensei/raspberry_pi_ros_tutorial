@@ -4,7 +4,7 @@
 
   <!-- rusrun led_tutorial basic_led_node -->
   <node pkg="led_tutorial" type="basic_led_node" name="basic_led_node" respawn="false" output="screen">
-    <param name="LED_PIN" type="int" value="12" />
+    <param name="LEDPin" type="int" value="24" />
   </node>
 
 </launch>

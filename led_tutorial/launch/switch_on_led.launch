@@ -4,8 +4,8 @@
 
   <!-- rusrun led_tutorial switch_on_led_node -->
   <node pkg="led_tutorial" type="switch_on_led_node" name="switch_on_led_node" respawn="false" output="screen">
-    <param name="LEDPin" type="int" value="12" />
-    <param name="SwitchPin" type="int" value="16" />
+    <param name="LEDPin" type="int" value="24" />
+    <param name="SwitchPin" type="int" value="23" />
   </node>
 
 </launch>

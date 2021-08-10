@@ -11,6 +11,8 @@ int main(int argc, char **argv)
 
   n.param<int>("LEDPin", led_pin, 0);
 
+  ROS_INFO("LED Pin : %d", led_pin);
+
   ros::Rate loop_rate(1);
 
   wiringPiSetupGpio();
@@ -22,11 +24,13 @@ int main(int argc, char **argv)
     if(led_turn == false)
     {
       digitalWrite(led_pin,HIGH);
+      ROS_INFO("LED ON");
       led_turn = true;
     }
     else
     {
       digitalWrite(led_pin,LOW);
+      ROS_INFO("LED OFF");
       led_turn = false;
     }
     loop_rate.sleep();
