@@ -18,7 +18,7 @@ roslaunch led_tutorial basic_led.launch
 
 ### Parameters
 
-- ~LED_PIN (int, default: "0")
+- ~LEDPin (int, default: "0")
 
   Gpio Pin number corresponding to LED
 
@@ -41,7 +41,7 @@ roslaunch led_tutorial switch_on_led.launch
 
 ### Parameters
 
-- ~LED_PIN (int, default: "0")
+- ~LEDPin (int, default: "0")
 
   Gpio Pin number corresponding to LED
 
