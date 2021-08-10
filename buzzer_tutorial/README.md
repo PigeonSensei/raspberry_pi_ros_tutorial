@@ -47,7 +47,7 @@ roslaunch buzzer_tutorial buzzer_melody.launch
 
 ----
 
-### note
+### Note
 
 
 ![note](./image/note.png)
