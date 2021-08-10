@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- rusrun buzzer_tutorial basic_buzzer_node -->
+  <node pkg="buzzer_tutorial" type="basic_buzzer_node" name="basic_buzzer_node" respawn="false" output="screen">
+    <param name="BuzzerPin" type="int" value="16" />
+  </node>
+
+</launch>
+
