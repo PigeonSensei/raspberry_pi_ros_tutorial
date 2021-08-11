@@ -57,7 +57,7 @@ Provide RGB LED control reference using Raspberry Pi and ROS
 
 ### Diagram
 
-![rgb_led_node](./diagram/switch_on_led.png)
+![rgb_led_node](./diagram/rgb_led.png)
 
 ### Run
 
@@ -93,7 +93,7 @@ Provide RGB LED PWM control reference using Raspberry Pi and ROS
 
 ### Diagram
 
-![rgb_pwm_pwm_node](./diagram/switch_on_led.png)
+![rgb_pwm_pwm_node](./diagram/rgb_led.png)
 
 ### Run
 
