@@ -49,3 +49,75 @@ roslaunch led_tutorial switch_on_led.launch
 
   Gpio Pin number corresponding to Switch
 
+----
+
+## rgb_led_node
+
+Provide RGB LED control reference using Raspberry Pi and ROS
+
+### Diagram
+
+![rgb_led_node](./diagram/switch_on_led.png)
+
+### Run
+
+```bash
+roslaunch led_tutorial rgb_led.launch
+```
+
+### Parameters
+
+- ~RPin (int, default: "0")
+
+  Gpio Pin number corresponding to R of RGB LED
+
+- ~GPin (int, default: "0")
+
+  Gpio Pin number corresponding to G of RGB LED
+  
+- ~BPin (int, default: "0")
+
+  Gpio Pin number corresponding to B of RGB LED
+  
+### Services
+
+- ~setRGBDigital ([led_tutorial/SetRGBDigital](https://github.com/PigeonSensei/raspberry_pi_ros_tutorial/blob/main/led_tutorial/srv/SetRGBDigital.srv))
+
+   Pass values true or false to R G B
+   
+----
+
+## rgb_led_pwm_node
+
+Provide RGB LED PWM control reference using Raspberry Pi and ROS
+
+### Diagram
+
+![rgb_pwm_pwm_node](./diagram/switch_on_led.png)
+
+### Run
+
+```bash
+roslaunch led_tutorial rgb_led_pwm.launch
+```
+
+### Parameters
+
+- ~RPin (int, default: "0")
+
+  Gpio Pin number corresponding to R of RGB LED
+
+- ~GPin (int, default: "0")
+
+  Gpio Pin number corresponding to G of RGB LED
+  
+- ~BPin (int, default: "0")
+
+  Gpio Pin number corresponding to B of RGB LED
+  
+### Services
+
+- ~setRGBAnalog ([led_tutorial/SetRGBAnalog](https://github.com/PigeonSensei/raspberry_pi_ros_tutorial/blob/main/led_tutorial/srv/SetRGBAnalog.srv))
+
+   Pass values 0~255 to R G B
+
