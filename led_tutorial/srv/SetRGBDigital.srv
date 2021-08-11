@@ -1,0 +1,7 @@
+bool R
+bool G
+bool B
+---
+string result
+string message
+time   Timestamp

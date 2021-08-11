@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- rusrun led_tutorial rgb_led_node -->
+  <node pkg="led_tutorial" type="rgb_led_node" name="rgb_led_node" respawn="false" output="screen">
+    <param name="RPin" type="int" value="23" />
+    <param name="GPin" type="int" value="24" />
+    <param name="BPin" type="int" value="25" />
+  </node>
+
+</launch>
+

@@ -9,6 +9,8 @@ add_compile_options(-std=c++11)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
+  message_generation
+  std_msgs
 )
 
 find_package(Boost REQUIRED COMPONENTS system)
@@ -55,11 +57,11 @@ set (wiringPi_include "/use/local/include")
 # )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+add_service_files(
+  FILES
+  SetRGBDigital.srv
+  SetRGBAnalog.srv
+)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -69,10 +71,10 @@ set (wiringPi_include "/use/local/include")
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs  # Or other packages containing msgs
-# )
+generate_messages(
+  DEPENDENCIES
+  std_msgs  # Or other packages containing msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -105,8 +107,8 @@ set (wiringPi_include "/use/local/include")
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES led_tutorial
-#  CATKIN_DEPENDS roscpp
+  LIBRARIES
+  CATKIN_DEPENDS roscpp message_generation std_msgs
 #  DEPENDS system_lib
 )
 
@@ -127,6 +129,15 @@ target_link_libraries(basic_led_node ${catkin_LIBRARIES} wiringPi -lrt)
 
 add_executable(switch_on_led_node src/switch_on_led.cpp)
 target_link_libraries(switch_on_led_node ${catkin_LIBRARIES} wiringPi -lrt)
+
+add_executable(rgb_led_node src/rgb_led.cpp)
+add_dependencies(rgb_led_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(rgb_led_node ${catkin_LIBRARIES} wiringPi -lrt)
+
+add_executable(rgb_led_pwm_node src/rgb_led_pwm.cpp)
+add_dependencies(rgb_led_pwm_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(rgb_led_pwm_node ${catkin_LIBRARIES} wiringPi -lrt)
+
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
