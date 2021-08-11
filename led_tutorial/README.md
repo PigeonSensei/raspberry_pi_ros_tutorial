@@ -6,6 +6,10 @@ Provide LED control reference using Raspberry Pi and ROS
 
 Provides a simple LED control example
 
+### Demo
+
+https://www.youtube.com/watch?v=mm998wcM_nk
+
 ### Diagram
 
 ![basic_led_diagram](./diagram/basic_led.png)
