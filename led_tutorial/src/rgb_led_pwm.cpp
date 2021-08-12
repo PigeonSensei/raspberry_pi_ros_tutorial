@@ -18,6 +18,7 @@ bool SetRGBAnalogCallBack(led_tutorial::SetRGBAnalog::Request &req,
   res.result = "True";
   res.message = "Set R : " + std::to_string(R) + ", Set G : " + std::to_string(G) + ", Set B : " + std::to_string(B);
   res.Timestamp = ros::Time::now();
+  ROS_INFO("Set R : %d, Set G : %d, Set B : %d", R,G,B);
 
   return true;
 }
