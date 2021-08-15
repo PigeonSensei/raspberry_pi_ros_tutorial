@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- rusrun led_tutorial basic_led_pwm_node -->
+  <node pkg="led_tutorial" type="basic_led_pwm_node" name="basic_led_pwm_node" respawn="false" output="screen">
+    <param name="LEDPin" type="int" value="24" />
+  </node>
+
+</launch>
+

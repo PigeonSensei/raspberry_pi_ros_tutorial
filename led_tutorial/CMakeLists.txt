@@ -127,6 +127,9 @@ include_directories(
 add_executable(basic_led_node src/basic_led.cpp)
 target_link_libraries(basic_led_node ${catkin_LIBRARIES} wiringPi -lrt)
 
+add_executable(basic_led_pwm_node src/basic_led_pwm.cpp)
+target_link_libraries(basic_led_pwm_node ${catkin_LIBRARIES} wiringPi -lrt)
+
 add_executable(switch_on_led_node src/switch_on_led.cpp)
 target_link_libraries(switch_on_led_node ${catkin_LIBRARIES} wiringPi -lrt)
 
