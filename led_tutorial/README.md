@@ -8,7 +8,7 @@ Provides a simple LED control example
 
 ### Demo
 
-https://www.youtube.com/watch?v=mm998wcM_nk
+https://youtu.be/mm998wcM_nk
 
 ### Diagram
 
@@ -32,6 +32,11 @@ roslaunch led_tutorial basic_led.launch
 ## switch_on_led_node
 
 Provides an example of LED control using a switch
+
+### Demo
+
+https://youtu.be/dZ0Ck_IMs8k
+
 
 ### Diagram
 
