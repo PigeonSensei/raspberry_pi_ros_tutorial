@@ -60,6 +60,28 @@ roslaunch led_tutorial switch_on_led.launch
 
 ----
 
+## basic_led_pwm_node
+
+Provide LED PWM control reference using Raspberry Pi and ROS
+
+### Diagram
+
+![basic_led_pwm_diagram](./diagram/basic_led.png)
+
+### Run
+
+```bash
+roslaunch led_tutorial basic_led_pwm_node.launch
+```
+
+### Parameters
+
+- ~LEDPin (int, default: "0")
+
+  Gpio Pin number corresponding to LED
+
+----
+
 ## rgb_led_node
 
 Provide RGB LED control reference using Raspberry Pi and ROS
