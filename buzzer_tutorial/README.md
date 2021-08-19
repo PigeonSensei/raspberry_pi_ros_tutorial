@@ -6,6 +6,10 @@ Provide buzzer control reference using Raspberry Pi and ROS
 
 Provides a simple buzzer control example
 
+### Demo
+
+https://youtu.be/AEsafJynOPo
+
 ### Diagram
 
 ![buzzer_tutorial](./diagram/buzzer_tutorial.png)
