@@ -75,7 +75,7 @@ https://youtu.be/61X0Qt6Q3QU
 ### Run
 
 ```bash
-roslaunch led_tutorial basic_led_pwm_node.launch
+roslaunch led_tutorial basic_led_pwm.launch
 ```
 
 ### Parameters
