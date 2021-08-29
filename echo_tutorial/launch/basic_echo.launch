@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- rusrun echo_tutorial basic_echo_node -->
+  <node pkg="echo_tutorial" type="basic_echo_node" name="basic_echo_node" respawn="false" output="screen">
+    <param name="Trig" type="int" value="23" />
+    <param name="Echo" type="int" value="24" />
+    <param name="MaxDistance" type="int" value="20" />
+  </node>
+
+</launch>
+
