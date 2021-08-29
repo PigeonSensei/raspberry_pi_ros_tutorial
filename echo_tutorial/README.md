@@ -11,7 +11,7 @@ Provides a simple Echo sensor control example
 
 ### Diagram
 
-![echo_tutorial](./diagram/echo_tutorial.png)
+![basic_echo](./diagram/basic_echo.png)
 
 ### Run
 
