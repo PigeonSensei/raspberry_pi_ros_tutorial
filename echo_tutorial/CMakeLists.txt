@@ -125,6 +125,7 @@ include_directories(
 )
 
 add_executable(basic_echo_node src/basic_echo.cpp)
+add_dependencies(basic_echo_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(basic_echo_node ${catkin_LIBRARIES} wiringPi -lrt)
 
 
