@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- rusrun camera_tutorial basic_camera_node -->
+  <node pkg="camera_tutorial" type="basic_camera_node" name="basic_camera_node" respawn="false" output="screen">
+    <param name="VideoDevice" type="int" value="0" />
+    <param name="Hz" type="int" value="30" />
+    <param name="Resolution" type="int" value="1" />
+  </node>
+
+</launch>
+
