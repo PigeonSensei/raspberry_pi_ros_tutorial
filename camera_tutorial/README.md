@@ -17,6 +17,12 @@ Example of publishing a camera image to a ROS topic
 
 Make sure your camera unit is ready
 
+```bash
+ls -ltrh /dev/video*
+```
+
+Usually the camera number is **0**.
+
 If you do not have a camera unit, follow the procedure below.
 
 Open the ```/boot/firmware/config.txt``` file with administrator privileges 
