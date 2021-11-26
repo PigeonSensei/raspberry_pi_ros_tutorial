@@ -22,7 +22,7 @@ roslaunch buzzer_tutorial basic_buzzer.launch
 
 ### Parameters
 
-- ~BuzzerPin (int, default: "0")
+- ~**BuzzerPin** (int, default: "0")
 
   Gpio Pin number corresponding to Buzzer
 
@@ -49,7 +49,7 @@ roslaunch buzzer_tutorial buzzer_melody.launch
 
 ### Parameters
 
-- ~BuzzerPin (int, default: "0")
+- ~**BuzzerPin** (int, default: "0")
 
   Gpio Pin number corresponding to Buzzer
 
