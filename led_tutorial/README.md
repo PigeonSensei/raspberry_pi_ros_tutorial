@@ -22,7 +22,7 @@ roslaunch led_tutorial basic_led.launch
 
 ### Parameters
 
-- ~LEDPin (int, default: "0")
+- ~**LEDPin** (int, default: "0")
 
   Gpio Pin number corresponding to LED
 
@@ -50,11 +50,11 @@ roslaunch led_tutorial switch_on_led.launch
 
 ### Parameters
 
-- ~LEDPin (int, default: "0")
+- ~**LEDPin** (int, default: "0")
 
   Gpio Pin number corresponding to LED
 
-- ~SwitchPin (int, default: "0")
+- ~**SwitchPin** (int, default: "0")
 
   Gpio Pin number corresponding to Switch
 
@@ -80,7 +80,7 @@ roslaunch led_tutorial basic_led_pwm.launch
 
 ### Parameters
 
-- ~LEDPin (int, default: "0")
+- ~**LEDPin** (int, default: "0")
 
   Gpio Pin number corresponding to LED
 
@@ -106,21 +106,21 @@ roslaunch led_tutorial rgb_led.launch
 
 ### Parameters
 
-- ~RPin (int, default: "0")
+- ~**RPin** (int, default: "0")
 
   Gpio Pin number corresponding to R of RGB LED
 
-- ~GPin (int, default: "0")
+- ~**GPin** (int, default: "0")
 
   Gpio Pin number corresponding to G of RGB LED
   
-- ~BPin (int, default: "0")
+- ~**BPin** (int, default: "0")
 
   Gpio Pin number corresponding to B of RGB LED
   
 ### Services
 
-- ~setRGBDigital ([led_tutorial/SetRGBDigital](https://github.com/PigeonSensei/raspberry_pi_ros_tutorial/blob/main/led_tutorial/srv/SetRGBDigital.srv))
+- ~**setRGBDigital** ([led_tutorial/SetRGBDigital](https://github.com/PigeonSensei/raspberry_pi_ros_tutorial/blob/main/led_tutorial/srv/SetRGBDigital.srv))
 
    Pass values true or false to R G B
    
@@ -146,21 +146,21 @@ roslaunch led_tutorial rgb_led_pwm.launch
 
 ### Parameters
 
-- ~RPin (int, default: "0")
+- ~**RPin** (int, default: "0")
 
   Gpio Pin number corresponding to R of RGB LED
 
-- ~GPin (int, default: "0")
+- ~**GPin** (int, default: "0")
 
   Gpio Pin number corresponding to G of RGB LED
   
-- ~BPin (int, default: "0")
+- ~**BPin** (int, default: "0")
 
   Gpio Pin number corresponding to B of RGB LED
   
 ### Services
 
-- ~setRGBAnalog ([led_tutorial/SetRGBAnalog](https://github.com/PigeonSensei/raspberry_pi_ros_tutorial/blob/main/led_tutorial/srv/SetRGBAnalog.srv))
+- ~**setRGBAnalog** ([led_tutorial/SetRGBAnalog](https://github.com/PigeonSensei/raspberry_pi_ros_tutorial/blob/main/led_tutorial/srv/SetRGBAnalog.srv))
 
    Pass values 0~255 to R G B
 
