@@ -40,9 +40,9 @@ start_x=1
 gpu_mem=128
 ```
 
-- **start_x=1** : should be specified when using the camera module [Required]
+- **start_x=1** : should be specified when using the camera module **[Required]**
 
-- **gpu_mem=128** : Set GPU memory to 128 MB [options]
+- **gpu_mem=128** : Set GPU memory to 128 MB **[options]**
 
 See documentation below for details
 
@@ -57,25 +57,25 @@ roslaunch camera_tutorial basic_camera.launch
 
 ### Published Topics
 
-- camera_image ([sensor_msgs/Image](http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Image.html))
+- **camera_image** ([sensor_msgs/Image](http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Image.html))
 
   This is a video taken by the camera
 
 ### Parameters
 
-- ~VideoDevice (int, default: "0")
+- ~**VideoDevice** (int, default: "0")
   
   number of video devices
   
   
-- ~Hz (int, default: "30")
+- ~**Hz** (int, default: "30")
 
   frequency of the image
   
   
-- ~Resolution (int, default: "0")
+- ~**Resolution** (int, default: "0")
 
-  video resolution
+  image resolution
   
   - **1** : 640x320
   - **2** : 320x240
