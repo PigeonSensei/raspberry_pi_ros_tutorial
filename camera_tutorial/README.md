@@ -57,7 +57,7 @@ roslaunch camera_tutorial basic_camera.launch
 
 ### Published Topics
 
-- camera_image ([sensor_msgs/Image](sensor_msgs/Image))
+- camera_image ([sensor_msgs/Image](http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Image.html))
 
   This is a video taken by the camera
 
