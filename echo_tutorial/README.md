@@ -24,23 +24,23 @@ roslaunch echo_tutorial basic_echo.launch
 
 ### Published Topics
 
-- echo_distance ([echo_tutorial/EchoDistance](https://github.com/PigeonSensei/raspberry_pi_ros_tutorial/blob/main/echo_tutorial/msg/EchoDistance.msg))
+- **echo_distance** ([echo_tutorial/EchoDistance](https://github.com/PigeonSensei/raspberry_pi_ros_tutorial/blob/main/echo_tutorial/msg/EchoDistance.msg))
 
   Distance detected by ultrasonic sensor
 
 ### Parameters
 
-- ~Trig (int, default: "-1")
+- ~**Trig** (int, default: "-1")
 
   Gpio Pin number corresponding to Trig of Echo sensor
   
   
-- ~Echo (int, default: "-1")
+- ~**Echo** (int, default: "-1")
 
   Gpio Pin number corresponding to Echo of Echo sensor
   
   
-- ~MaxDistance (int, default: "10")
+- ~**MaxDistance** (int, default: "10")
 
   Set the maximum sensing distance of the sensor.
   
