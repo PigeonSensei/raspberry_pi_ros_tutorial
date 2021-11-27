@@ -8,6 +8,11 @@ Example of publishing a camera image to a ROS topic
 
 ### Demo
 
+https://youtu.be/pBio6fvzaJw
+
+### Tutorial Video
+
+https://youtu.be/F-24LbZz9Ws
 
 ### Diagram
 
@@ -21,7 +26,20 @@ Make sure your camera unit is ready
 ls -ltrh /dev/video*
 ```
 
-Usually the camera number is **0**.
+Usually the video device number is **0**.
+
+Below is an example of the result
+
+```bash
+crw-rw----+ 1 root video 81, 2 Sep  7 18:37 /dev/video14
+crw-rw----+ 1 root video 81, 1 Sep  7 18:37 /dev/video13
+crw-rw----+ 1 root video 81, 6 Sep  7 18:37 /dev/video0
+crw-rw----+ 1 root video 81, 4 Sep  7 18:37 /dev/video15
+crw-rw----+ 1 root video 81, 0 Sep  7 18:37 /dev/video10
+crw-rw----+ 1 root video 81, 5 Sep  7 18:37 /dev/video16
+crw-rw----+ 1 root video 81, 7 Sep  7 18:37 /dev/video12
+crw-rw----+ 1 root video 81, 3 Sep  7 18:37 /dev/video11
+```
 
 If you do not have a camera unit, follow the procedure below.
 
@@ -65,7 +83,7 @@ roslaunch camera_tutorial basic_camera.launch
 
 - ~**VideoDevice** (int, default: "0")
   
-  number of video devices
+  number of video device
   
   
 - ~**Hz** (int, default: "30")
